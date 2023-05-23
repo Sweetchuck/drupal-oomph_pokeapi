@@ -1,0 +1,16 @@
+{
+    "name": "drupal/oomph",
+    "type": "drupal-module",
+    "description": "Job interview homework",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Andor",
+            "email": "david-andor@kozpontiagy.hu",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/core": "^10.0"
+    }
+}
