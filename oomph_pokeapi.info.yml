@@ -1,0 +1,5 @@
+type: 'module'
+package: 'Oomph'
+name: 'Oomph - PokeAPI'
+description: 'Integrates PokéAPI.co'
+core_version_requirement: '^10'

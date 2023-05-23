@@ -1,0 +1,13 @@
+services:
+  oomph_pokeapi.client:
+    class: 'Drupal\oomph_pokeapi\PokeApi\Client'
+    arguments:
+      - '@http_client'
+
+  oomph_pokeapi.pokemon.param_converter:
+    class: 'Drupal\oomph_pokeapi\Route\PokemonParamConverter'
+    arguments:
+      - '@oomph_pokeapi.client'
+    tags:
+      -
+        name: 'paramconverter'

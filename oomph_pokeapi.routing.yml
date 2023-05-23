@@ -1,0 +1,20 @@
+oomph_pokeapi.endpoint.pokemon_list:
+  path: '/oomph-pokeapi/pokemon'
+  defaults:
+    _title: 'Pokémons'
+    _controller: '\Drupal\oomph_pokeapi\Controller\EndpointPokemonList::body'
+  requirements:
+    _access: 'TRUE'
+
+oomph_pokeapi.endpoint.pokemon:
+  path: '/oomph-pokeapi/pokemon/{pokemon}'
+  options:
+    parameters:
+      pokemon:
+        type: 'oomph_pokeapi:pokemon'
+  defaults:
+    _title: 'Pokémon'
+    _title_callback: '\Drupal\oomph_pokeapi\Controller\EndpointPokemon::title'
+    _controller: '\Drupal\oomph_pokeapi\Controller\EndpointPokemon::body'
+  requirements:
+    _access: 'TRUE'
